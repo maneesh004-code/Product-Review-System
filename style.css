@@ -1,0 +1,30 @@
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 1rem;
+        }
+        .main-image {
+            grid-column: span 4;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+        }
+        .thumbnail {
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+        .thumbnail:hover {
+            opacity: 0.8;
+        }
+        .selected-variant {
+            border: 2px solid #3b82f6 !important;
+        }
+        .star-rating .star {
+            color: #d1d5db;
+        }
+        .star-rating .filled {
+            color: #f59e0b;
+        }
